@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="src/style.css">
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
   <title>Eyewear Brand Generator</title>
 </head>
 <body>
@@ -17,14 +18,14 @@
 
   <main>
     <form id="eyewear-generator-form" action="">
-      <input type="text" class="input-text" placeholder="Enter your preferred eyewear style">
-      <select name="" id="">
+      <input id="user-input" type="text" class="input-text" placeholder="What type of frame are you looking for?" required> 
+      <!-- <select name="" id="">
         <option value="" disabled="true">Budget</option>
-        <option value="">up to £100</option>
+        <option id="up-to-100" value="">up to £100</option>
         <option value="">up to £200</option>
         <option value="">up to £300</option>
         <option value="">£300+</option>
-      </select>
+      </select> -->
       <input type="submit" class="submit-button">
     </form>
       
