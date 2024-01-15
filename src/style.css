@@ -1,10 +1,14 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-image: url("eyewearbackground.jpeg")
+
 }
 
 h1 {
   text-align: center;
   margin-bottom: 40px;
+  color: rgb(240, 240, 240);
+  display: block;
 }
 
 .container {
@@ -12,39 +16,72 @@ h1 {
   max-width: 600px;
 }
 
-form {
-  display: flex;
-  padding: 30px;
-  background-color: rgb(255, 199, 238);
+.form {
+  display: block;
+  padding: 50px;
+  background-color: rgba(245, 245, 245, 0.387);
   margin-bottom: 40px;
   border-radius: 15px;
 }
 
-input  {
-  padding: 10px 20px;
+
+
+#user-input  {
+  text-align: center;
+  padding: 15px 20px;
   border-radius: 10px;
   border: 0.5px solid black;
   background-color: white;
+  margin-left: 100px;
   width: 250px
   
 }
 
+#user-input:hover  {
+  transition: all 200ms ease-in-out;
+  
+}
 
-select {
+.submit-button {
+  display: block;
+  padding: 10px 20px;
   border-radius: 10px;
   border: 0.5px solid black;
-  text-align: center;
+  background-color: white;
+  margin-left: 80px;
+  max-width: 100px;
+  margin-left: 200px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 
 }
+
+.submit-button:hover {
+  border: 0.5px solid black;
+  background-color: rgba(0, 0, 0, 0.766);
+  cursor: pointer;
+  color: white;
+
+}
+
+.example {
+  text-align: center;
+  color: rgb(76, 74, 74);
+  display: block;
+}
+
+
 .eyewear-brand {
-  background-color: pink;
+  background-color: rgba(245, 245, 245, 0.387);
   padding: 60px;
   border-radius: 15px;
 }
 
 footer {
   margin-top: 100px;
-  font-size: 13px;
+  font-size: 14px;
+  color: white;
   text-align: center;
   display: flex;
+  display: block;
 }

@@ -9,6 +9,9 @@ function displayEyewearBrand(response){
     delay: 40,
     cursor: "",
   });
+
+  let userInputElement = document.querySelector('#user-input')
+  userInputElement.innerHTML = ""
 }
 
 function generateEyewearBrand(event){
